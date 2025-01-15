@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HW</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Demo of the element selector</h1>
+
+<div>
+	<p id="firstname">My name is Donald</p>
+	<p>I live in Duckburg.</p>
+</div>
+
+<p>My best friend is Mickey</p>
+
+<span>This is some text in a span.</span>
+
+<!--CSS Universal (*) Selector-->
+
+<h1>Demo of the * selector</h1>
+
+<div class="intro">
+	<p>My name is Donald</p>
+	<p>I live in Duckburg.</p>
+</div>
+
+<p>My best friend is <span>Mickey</span></p>
+
+<!--CSS .class Selector-->
+
+<h1>Demo of the .class selector</h1>
+
+<div class="h1">
+	<p>My name is Donald.</p>
+	<p>I live in Duckburg.</p>
+</div>
+
+<p>My best friend is Mickey.</p>
+
+<p class="h1">My best friend is Mickey.</p>
+
+<!--CSS [attribute=value] Selector-->
+
+<h1>Demo of the [attribute] selector</h1>
+
+<p>Links with a target attribute is styled with a yellow background color:</p>
+
+<a href="https://www.w3schools.com">W3schools.com</a><br>
+<a href="https://www.google.com" target="_blank">Google.com</a>
+<a href="https://www.microsoft.com" target="_blank">Microsoft.com</a>
+
+<p>Hello world!</p>
+
+<p lang="no">Hei verden!</p>
+<p lang="it">Salve, mondo!</p>
+
+<!--Set the width of an <input type="text"> element to 100px. However, when it gets focus, make it 250px wide:-->
+
+<h1>The width Property</h1>
+
+<p>Set the width of the input field to 100 pixels. However, when the input field gets focus, make it 250 pixels wide:</p>
+
+Search: <input type="text" name="search">
+
+<!--CSS [attribute~=value] Selector (Select and style all elements with a title attribute that contains the word "flower":)-->
+
+<h1>Demo of the [attribute~=value] selector</h1>
+
+<p>Elements with a title attribute containing the word "flower" is styled with a green solid border:</p>
+
+<img src="images/klematis.jpg" title="klematis flower" class="width">
+
+<!--CSS [attribute|=value] Selector (Select and style elements with a lang attribute value of "en" or "en-":)-->
+
+
+<h1>Demo of the [attribute|=value] selector </h1>
+
+<p>Elements with a lang attribute value of "en" or "en-" is styled with a lightblue background:</p>
+
+<p lang="en">Hello!</p>
+<p lang="en-us">Hi!</p>
+<p lang="en-gb">Ello!</p>
+<p lang="us">Hi!</p>
+<p lang="no">Hei!</p>
+
+<!--CSS Nesting (&) Selector (Use of the nesting (&) selector:)-->
+
+<h1>Demo of the nesting (&) selector</h1>
+
+<div class="box">This text contains a <a href="#">link</a>. Hover over the link to see the effect.</div>
+
+<!--CSS Child (>) Combinator (Select and style every <p> element that are direct children of a <div> element:)-->
+
+	<h1>The Child (>) Combinator</h1>
+
+<div>
+  <h2>Donald Duck</h2>
+  <p>Donald Duck lives in Duckburg.</p>
+</div>
+
+<div>
+  <span><p>I will not be styled.</p></span>
+  <p>I will be styled.</p>
+</div>
+
+<p>Donald Duck's best friend is Mickey.</p>
+
+<!--CSS Descendant ( ) Combinator (Select and style all <p> elements inside <div> elements:)-->
+
+	<h1>The Descendant ( ) Combinator</h1>
+
+<div>
+  <h2>Donald Duck</h2>
+  <p>Donald Duck lives in Duckburg.</p>
+</div>
+
+<div>
+  <span><p>I will be styled.</p></span>
+  <p>I will be styled.</p>
+</div>
+
+<p>Donald Duck's best friend is Mickey.</p>
+
+
+</body>
+</html>
